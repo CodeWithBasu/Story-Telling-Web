@@ -42,7 +42,10 @@ export default function RadhaKrishnaPage() {
 
       
       {/* Stardust/Sparkles */}
-      <div className="fixed inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 pointer-events-none mix-blend-screen animate-pulse" />
+      <div 
+        className="fixed inset-0 z-0 opacity-10 pointer-events-none mix-blend-screen animate-pulse"
+        style={{ backgroundImage: "url('https://www.transparenttextures.com/patterns/stardust.png')" }}
+      />
       <div className="fixed top-0 left-0 w-full h-32 bg-gradient-to-b from-sky-950/50 to-transparent z-10 pointer-events-none" />
       
       {/* Progress Bar */}

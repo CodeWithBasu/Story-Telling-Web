@@ -30,7 +30,10 @@ export default function RamayanPage() {
       <BackgroundMusic src="/ramayan/bgm.mp3" initialVolume={0.05} />
       {/* Background Ambience */}
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-orange-900/20 via-black to-black z-0 pointer-events-none" />
-      <div className="fixed inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 pointer-events-none mix-blend-screen" />
+      <div 
+        className="fixed inset-0 z-0 opacity-20 pointer-events-none mix-blend-screen"
+        style={{ backgroundImage: "url('https://www.transparenttextures.com/patterns/stardust.png')" }}
+      />
       <div className="fixed top-0 left-0 w-full h-32 bg-gradient-to-b from-orange-900/30 to-transparent z-10 pointer-events-none" />
       
       {/* Progress Bar */}
