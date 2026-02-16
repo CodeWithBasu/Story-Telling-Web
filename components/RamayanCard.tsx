@@ -98,7 +98,7 @@ export const RamayanCard: React.FC<RamayanCardProps> = ({
     <div
       className={`group relative flex flex-col ${
         index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-      } gap-8 mb-20 items-center animate-fadeIn`}
+      } gap-6 md:gap-8 mb-12 md:mb-20 items-center animate-fadeIn`}
     >
       {/* Decorative Background Element for each card */}
       <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 to-red-500/5 rounded-3xl blur-3xl -z-10 group-hover:from-orange-500/10 group-hover:to-red-500/10 transition-all duration-700" />

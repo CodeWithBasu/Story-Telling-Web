@@ -60,49 +60,50 @@ export default function RadhaKrishnaPage() {
       <nav className="fixed top-4 right-4 z-40 flex gap-2">
         <Link
           href="/"
-          className="bg-black/40 hover:bg-sky-950/60 text-sky-100 px-4 py-2 rounded-full border border-sky-500/30 font-serif text-sm flex items-center gap-2 transition-all hover:scale-105 hover:border-sky-500/80 backdrop-blur-md shadow-xl group"
+          className="bg-black/40 hover:bg-sky-950/60 text-sky-100 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-sky-500/30 font-serif text-xs md:text-sm flex items-center gap-2 transition-all hover:scale-105 hover:border-sky-500/80 backdrop-blur-md shadow-xl group"
         >
-          <Home className="w-4 h-4 text-sky-400 group-hover:text-sky-200" />
-          Home
+          <Home className="w-3 h-3 md:w-4 md:h-4 text-sky-400 group-hover:text-sky-200" />
+          <span className="hidden md:inline">Home</span>
+          <span className="md:hidden"><Home className="w-4 h-4" /></span>
         </Link>
       </nav>
 
       {/* Language Switcher - Floating */}
-      <div className="fixed top-4 left-4 z-40 bg-black/60 backdrop-blur-xl p-1.5 rounded-2xl border border-white/10 shadow-2xl flex gap-1 transform transition-all hover:scale-105 hover:border-sky-500/30">
+      <div className="fixed top-4 left-4 z-40 bg-black/60 backdrop-blur-xl p-1 md:p-1.5 rounded-2xl border border-white/10 shadow-2xl flex gap-1 transform transition-all hover:scale-105 hover:border-sky-500/30">
         <button
           onClick={() => setLanguage('en')}
-          className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 ${
+          className={`px-2 py-1.5 md:px-4 md:py-2 rounded-xl text-[10px] md:text-xs font-bold transition-all duration-300 ${
             language === 'en' 
               ? 'bg-gradient-to-r from-sky-600 to-pink-600 text-white shadow-lg' 
               : 'text-gray-400 hover:text-sky-300 hover:bg-white/5'
           }`}
         >
-          English
+          EN
         </button>
         <button
           onClick={() => setLanguage('hi')}
-          className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 ${
+          className={`px-2 py-1.5 md:px-4 md:py-2 rounded-xl text-[10px] md:text-xs font-bold transition-all duration-300 ${
             language === 'hi' 
               ? 'bg-gradient-to-r from-sky-600 to-pink-600 text-white shadow-lg' 
               : 'text-gray-400 hover:text-sky-300 hover:bg-white/5'
           }`}
         >
-          हिंदी
+          हि
         </button>
         <button
           onClick={() => setLanguage('or')}
-          className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 ${
+          className={`px-2 py-1.5 md:px-4 md:py-2 rounded-xl text-[10px] md:text-xs font-bold transition-all duration-300 ${
             language === 'or' 
               ? 'bg-gradient-to-r from-sky-600 to-pink-600 text-white shadow-lg' 
               : 'text-gray-400 hover:text-sky-300 hover:bg-white/5'
           }`}
         >
-          ଓଡ଼ିଆ
+          ଓଡ଼ି
         </button>
       </div>
 
       {/* Hero Section */}
-      <div className="relative pt-32 pb-20 z-10 overflow-hidden">
+      <div className="relative pt-24 md:pt-32 pb-12 md:pb-20 z-10 overflow-hidden">
         {/* Light Rays Effect */}
         <div className="absolute top-0 left-0 w-full h-full z-0 opacity-60 pointer-events-none">
              <LightRays
@@ -118,23 +119,23 @@ export default function RadhaKrishnaPage() {
         </div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="mb-8 inline-block relative group cursor-default">
+          <div className="mb-6 md:mb-8 inline-block relative group cursor-default">
             <div className="absolute -inset-4 bg-pink-500/20 blur-3xl rounded-full opacity-50 group-hover:opacity-75 transition-opacity duration-1000" />
-            <Sparkles className="w-16 h-16 md:w-20 md:h-20 text-pink-400 mx-auto animate-pulse drop-shadow-[0_0_15px_rgba(236,72,153,0.5)]" />
+            <Sparkles className="w-12 h-12 md:w-20 md:h-20 text-pink-400 mx-auto animate-pulse drop-shadow-[0_0_15px_rgba(236,72,153,0.5)]" />
           </div>
           
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 font-cinzel tracking-tight relative">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-300 via-pink-400 to-purple-300 animate-gradient-x drop-shadow-sm">
+          <h1 className="text-4xl md:text-8xl lg:text-9xl font-bold mb-4 md:mb-6 font-cinzel tracking-tight relative">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-300 via-pink-400 to-purple-300 animate-gradient-x drop-shadow-sm leading-tight">
               {language === 'en' ? 'Radha Krishna' : language === 'hi' ? 'राधा कृष्ण' : 'ରାଧା କୃଷ୍ଣ'}
             </span>
-            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-pink-500 to-transparent opacity-50" />
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-20 md:w-32 h-1 bg-gradient-to-r from-transparent via-pink-500 to-transparent opacity-50" />
           </h1>
           
-          <p className="text-2xl md:text-4xl text-sky-100/90 font-great-vibes mb-6 max-w-4xl mx-auto tracking-wide">
+          <p className="text-lg md:text-4xl text-sky-100/90 font-great-vibes mb-4 md:mb-6 max-w-4xl mx-auto tracking-wide px-2">
             {language === 'en' ? 'The Divine Tale of Eternal Love' : language === 'hi' ? 'शाश्वत प्रेम की दिव्य कथा' : 'ଅମର ପ୍ରେମର ଦିବ୍ୟ କାହାଣୀ'}
           </p>
           
-          <p className="text-sm md:text-lg text-sky-200/60 max-w-2xl mx-auto leading-relaxed font-light tracking-wider uppercase">
+          <p className="text-xs md:text-lg text-sky-200/60 max-w-2xl mx-auto leading-relaxed font-light tracking-wider uppercase px-4">
             {language === 'en' 
               ? 'Journey through devotion, joy, and divine union'
               : language === 'hi'
@@ -143,17 +144,17 @@ export default function RadhaKrishnaPage() {
           </p>
           
           {/* Story Stats */}
-          <div className="flex flex-wrap justify-center gap-3 mt-12">
-            <div className="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-xs md:text-sm text-sky-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
-              <BookOpen className="w-4 h-4 text-pink-400" />
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-8 md:mt-12">
+            <div className="px-3 py-2 md:px-5 md:py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-[10px] md:text-sm text-sky-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
+              <BookOpen className="w-3 h-3 md:w-4 md:h-4 text-pink-400" />
               <span>{radhaKrishnaStory.length} {language === 'en' ? 'Stories' : language === 'hi' ? 'कहानियां' : 'କାହାଣୀ'}</span>
             </div>
-            <div className="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-xs md:text-sm text-sky-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
-               <span className="text-pink-400">❤️</span>
+            <div className="px-3 py-2 md:px-5 md:py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-[10px] md:text-sm text-sky-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
+               <span className="text-pink-400 text-xs md:text-base">❤️</span>
                <span>{language === 'en' ? 'Eternal Love' : language === 'hi' ? 'अमर प्रेम' : 'ଅମର ପ୍ରେମ'}</span>
             </div>
-            <div className="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-xs md:text-sm text-sky-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
-              <span className="text-pink-400">✨</span>
+            <div className="px-3 py-2 md:px-5 md:py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-[10px] md:text-sm text-sky-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
+              <span className="text-pink-400 text-xs md:text-base">✨</span>
               <span>{language === 'en' ? 'Divine Play' : language === 'hi' ? 'दिव्य लीला' : 'ଦିବ୍ୟ ଲୀଳା'}</span>
             </div>
           </div>

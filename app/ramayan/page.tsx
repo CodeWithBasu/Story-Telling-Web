@@ -48,49 +48,50 @@ export default function RamayanPage() {
       <nav className="fixed top-4 right-4 z-40 flex gap-2">
         <Link
           href="/"
-          className="bg-black/40 hover:bg-orange-950/60 text-orange-100 px-4 py-2 rounded-full border border-orange-500/30 font-serif text-sm flex items-center gap-2 transition-all hover:scale-105 hover:border-orange-500/80 backdrop-blur-md shadow-xl group"
+          className="bg-black/40 hover:bg-orange-950/60 text-orange-100 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-orange-500/30 font-serif text-xs md:text-sm flex items-center gap-2 transition-all hover:scale-105 hover:border-orange-500/80 backdrop-blur-md shadow-xl group"
         >
-          <Home className="w-4 h-4 text-orange-400 group-hover:text-orange-200" />
-          Home
+          <Home className="w-3 h-3 md:w-4 md:h-4 text-orange-400 group-hover:text-orange-200" />
+          <span className="hidden md:inline">Home</span>
+          <span className="md:hidden"><Home className="w-4 h-4" /></span>
         </Link>
       </nav>
 
       {/* Language Switcher - Floating */}
-      <div className="fixed top-4 left-4 z-40 bg-black/60 backdrop-blur-xl p-1.5 rounded-2xl border border-white/10 shadow-2xl flex gap-1 transform transition-all hover:scale-105 hover:border-orange-500/30">
+      <div className="fixed top-4 left-4 z-40 bg-black/60 backdrop-blur-xl p-1 md:p-1.5 rounded-2xl border border-white/10 shadow-2xl flex gap-1 transform transition-all hover:scale-105 hover:border-orange-500/30">
         <button
           onClick={() => setLanguage('en')}
-          className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 ${
+          className={`px-2 py-1.5 md:px-4 md:py-2 rounded-xl text-[10px] md:text-xs font-bold transition-all duration-300 ${
             language === 'en' 
               ? 'bg-gradient-to-r from-orange-700 to-red-700 text-white shadow-lg' 
               : 'text-gray-400 hover:text-orange-300 hover:bg-white/5'
           }`}
         >
-          English
+          EN
         </button>
         <button
           onClick={() => setLanguage('hi')}
-          className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 ${
+          className={`px-2 py-1.5 md:px-4 md:py-2 rounded-xl text-[10px] md:text-xs font-bold transition-all duration-300 ${
             language === 'hi' 
               ? 'bg-gradient-to-r from-orange-700 to-red-700 text-white shadow-lg' 
               : 'text-gray-400 hover:text-orange-300 hover:bg-white/5'
           }`}
         >
-          हिंदी
+          हि
         </button>
         <button
           onClick={() => setLanguage('or')}
-          className={`px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 ${
+          className={`px-2 py-1.5 md:px-4 md:py-2 rounded-xl text-[10px] md:text-xs font-bold transition-all duration-300 ${
             language === 'or' 
               ? 'bg-gradient-to-r from-orange-700 to-red-700 text-white shadow-lg' 
               : 'text-gray-400 hover:text-orange-300 hover:bg-white/5'
           }`}
         >
-          ଓଡ଼ିଆ
+          ଓଡ଼ି
         </button>
       </div>
 
       {/* Hero Section */}
-      <div className="relative pt-32 pb-20 z-10 overflow-hidden">
+      <div className="relative pt-24 md:pt-32 pb-12 md:pb-20 z-10 overflow-hidden">
         {/* Light Rays Effect */}
         <div className="absolute top-0 left-0 w-full h-full z-0 opacity-60 pointer-events-none">
              <LightRays
@@ -106,23 +107,23 @@ export default function RamayanPage() {
         </div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="mb-8 inline-block relative group cursor-default">
+          <div className="mb-6 md:mb-8 inline-block relative group cursor-default">
             <div className="absolute -inset-4 bg-orange-500/20 blur-3xl rounded-full opacity-50 group-hover:opacity-75 transition-opacity duration-1000" />
-            <Sparkles className="w-16 h-16 md:w-20 md:h-20 text-amber-400 mx-auto animate-pulse drop-shadow-[0_0_15px_rgba(251,191,36,0.5)]" />
+            <Sparkles className="w-12 h-12 md:w-20 md:h-20 text-amber-400 mx-auto animate-pulse drop-shadow-[0_0_15px_rgba(251,191,36,0.5)]" />
           </div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 font-serif tracking-tight relative">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-200 via-orange-400 to-amber-200 animate-gradient-x drop-shadow-sm">
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold mb-4 md:mb-6 font-serif tracking-tight relative">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-200 via-orange-400 to-amber-200 animate-gradient-x drop-shadow-sm leading-tight">
               {language === 'en' ? 'The Ramayan' : language === 'hi' ? 'रामायण' : 'ରାମାୟଣ'}
             </span>
-            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent opacity-50" />
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 md:w-24 h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent opacity-50" />
           </h1>
           
-          <p className="text-xl md:text-3xl text-orange-100/80 font-serif mb-6 max-w-4xl mx-auto italic tracking-wide">
+          <p className="text-lg md:text-3xl text-orange-100/80 font-serif mb-4 md:mb-6 max-w-4xl mx-auto italic tracking-wide px-2">
             {language === 'en' ? 'The Epic Tale of Lord Rama' : language === 'hi' ? 'भगवान राम की महाकाव्य कथा' : 'ପ୍ରଭୁ ରାମଙ୍କ ମହାକାବ୍ୟ'}
           </p>
           
-          <p className="text-sm md:text-lg text-orange-200/60 max-w-2xl mx-auto leading-relaxed font-light tracking-wider uppercase">
+          <p className="text-xs md:text-lg text-orange-200/60 max-w-2xl mx-auto leading-relaxed font-light tracking-wider uppercase px-4">
             {language === 'en' 
               ? 'Journey through courage, devotion, and righteousness'
               : language === 'hi'
@@ -131,17 +132,17 @@ export default function RamayanPage() {
           </p>
           
           {/* Story Stats */}
-          <div className="flex flex-wrap justify-center gap-3 mt-12">
-            <div className="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-xs md:text-sm text-orange-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
-              <BookOpen className="w-4 h-4 text-amber-400" />
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-8 md:mt-12">
+            <div className="px-3 py-2 md:px-5 md:py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-[10px] md:text-sm text-orange-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
+              <BookOpen className="w-3 h-3 md:w-4 md:h-4 text-amber-400" />
               <span>{ramayanStory.length} {language === 'en' ? 'Chapters' : language === 'hi' ? 'अध्याय' : 'ଅଧ୍ୟାୟ'}</span>
             </div>
-            <div className="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-xs md:text-sm text-orange-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
-               <span className="text-amber-400">📖</span>
+            <div className="px-3 py-2 md:px-5 md:py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-[10px] md:text-sm text-orange-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
+               <span className="text-amber-400 text-xs md:text-base">📖</span>
                <span>{language === 'en' ? 'Ancient Epic' : language === 'hi' ? 'प्राचीन महाकाव्य' : 'ପ୍ରାଚୀନ ମହାକାବ୍ୟ'}</span>
             </div>
-            <div className="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-xs md:text-sm text-orange-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
-              <span className="text-amber-400">⏱️</span>
+            <div className="px-3 py-2 md:px-5 md:py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-[10px] md:text-sm text-orange-100/80 flex items-center gap-2 hover:bg-white/10 transition-colors">
+              <span className="text-amber-400 text-xs md:text-base">⏱️</span>
               <span>2000+ {language === 'en' ? 'Years Old' : language === 'hi' ? 'वर्ष पुराना' : 'ବର୍ଷ ପୁରୁଣା'}</span>
             </div>
           </div>
