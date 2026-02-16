@@ -8,9 +8,12 @@ import BackgroundMusic from "@/components/ui/BackgroundMusic"
 import { BookOpen, Home, Sparkles, Wand2 } from "lucide-react"
 import Link from "next/link"
 
+import { useIsTablet } from "@/hooks/use-mobile"
+
 export default function RamayanPage() {
   const [progress, setProgress] = useState(0)
   const [language, setLanguage] = useState<'en' | 'hi' | 'or'>('en')
+  const isTablet = useIsTablet()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -93,14 +96,14 @@ export default function RamayanPage() {
       {/* Hero Section */}
       <div className="relative pt-24 md:pt-32 pb-12 md:pb-20 z-10 overflow-hidden">
         {/* Light Rays Effect */}
-        <div className="absolute top-0 left-0 w-full h-full z-0 opacity-60 pointer-events-none">
+        <div className={`absolute top-0 left-0 w-full h-full z-0 pointer-events-none transition-opacity duration-500 ${isTablet ? 'opacity-80' : 'opacity-60'}`}>
              <LightRays
                 raysOrigin="top-center"
                 raysColor="#fbbf24" 
                 raysSpeed={0.2}
-                lightSpread={0.6}
-                rayLength={1.5}
-                followMouse={true}
+                lightSpread={isTablet ? 2.0 : 0.6}
+                rayLength={isTablet ? 2.5 : 1.5}
+                followMouse={!isTablet}
                 mouseInfluence={0.2}
                 className="w-full h-full"
             />

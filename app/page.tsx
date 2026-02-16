@@ -33,13 +33,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/80 via-orange-950/40 to-transparent" />
         
         {/* Light Rays */}
-        <div className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity duration-500">
+        <div className={`absolute inset-0 transition-opacity duration-500 ${isTablet ? 'opacity-80' : 'opacity-40 group-hover:opacity-60'}`}>
            <LightRays
               raysOrigin="bottom-left"
               raysColor="#fbbf24" 
               raysSpeed={0.2}
-              lightSpread={0.8}
-              rayLength={1.2}
+              lightSpread={isTablet ? 2.5 : 0.8}
+              rayLength={isTablet ? 1.5 : 1.2}
               followMouse={!isTablet}
               mouseInfluence={0.3}
           />
@@ -90,13 +90,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-l from-black/80 via-purple-950/40 to-transparent" />
 
         {/* Light Rays */}
-        <div className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity duration-500">
+        <div className={`absolute inset-0 transition-opacity duration-500 ${isTablet ? 'opacity-80' : 'opacity-40 group-hover:opacity-60'}`}>
            <LightRays
               raysOrigin="bottom-right"
               raysColor="#f472b6" 
               raysSpeed={0.2}
-              lightSpread={0.8}
-              rayLength={1.2}
+              lightSpread={isTablet ? 2.5 : 0.8}
+              rayLength={isTablet ? 1.5 : 1.2}
               followMouse={!isTablet}
               mouseInfluence={0.3}
           />
