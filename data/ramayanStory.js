@@ -16,7 +16,7 @@ export const ramayanStory = [
       hi: "अयोध्या साम्राज्य",
       or: "ଅଯୋଧ୍ୟା ରାଜ୍ୟ"
     },
-    image: "/The%20Ramayan/rama-birth.png",
+    image: "/ramayan/rama-birth.png",
     story: {
       en: "Long ago in the magnificent kingdom of Ayodhya, King Dasharatha ruled with wisdom and kindness. He had three queens but no children. After performing a sacred yajna (fire ceremony), the gods blessed him with four sons. Rama, born to Queen Kaushalya, was the eldest and an incarnation of Lord Vishnu himself. He was born with divine qualities - courage, righteousness, and compassion. From childhood, Rama showed extraordinary wisdom and strength, making everyone in Ayodhya proud.",
       hi: "बहुत समय पहले अयोध्या के भव्य साम्राज्य में, राजा दशरथ ज्ञान और दया के साथ शासन करते थे। उनकी तीन रानियां थीं लेकिन कोई संतान नहीं थी। एक पवित्र यज्ञ करने के बाद, देवताओं ने उन्हें चार पुत्रों का आशीर्वाद दिया। रानी कौशल्या से जन्मे राम सबसे बड़े थे और भगवान विष्णु के अवतार थे। उनका जन्म दिव्य गुणों - साहस, धर्म और करुणा के साथ हुआ था। बचपन से ही, राम ने असाधारण ज्ञान और शक्ति का प्रदर्शन किया, जिससे अयोध्या में हर कोई गर्व महसूस करता था।",
@@ -45,7 +45,7 @@ export const ramayanStory = [
       hi: "गुरुकुल और वन",
       or: "ଗୁରୁକୁଳ ଓ ବନ"
     },
-    image: "/The%20Ramayan/childhood.png",
+    image: "/ramayan/childhood.png",
     story: {
       en: "Rama and his brothers received their education from the great Guru Vashistha, learning scriptures, warfare, and duties of a prince. Even as a young boy, Rama's bravery was unmatched. When Sage Vishwamitra asked for help to protect his yajnas from demons, King Dasharatha hesitated but sent Rama and Lakshmana. In the forest, young Rama fearlessly defeated the terrifying demoness Tataka and her son Subahu, proving his divine strength. He protected the sage's prayers and received divine weapons in return.",
       hi: "राम और उनके भाइयों ने महान गुरु वशिष्ठ से शिक्षा प्राप्त की, जिसमें उन्होंने शास्त्र, युद्ध कला और राजकुमार के कर्तव्यों को सीखा। एक बालक के रूप में भी, राम की वीरता अतुलनीय थी। जब ऋषि विश्वामित्र ने अपने यज्ञों को राक्षसों से बचाने के लिए मदद मांगी, तो राजा दशरथ हिचकिचाए लेकिन राम और लक्ष्मण को भेज दिया। जंगल में, युवा राम ने भयानक राक्षसी ताड़का और उसके बेटे सुबाहु को निडर होकर हराया, अपनी दिव्य शक्ति को साबित किया। उन्होंने ऋषि की प्रार्थनाओं की रक्षा की और बदले में दिव्य अस्त्र प्राप्त किए।",
@@ -79,7 +79,7 @@ export const ramayanStory = [
       hi: "त्रेता युग",
       or: "ତ୍ରେତୟା ଯୁଗ"
     },
-    image: "/The%20Ramayan/swayamvar.png",
+    image: "/ramayan/swayamvar.png",
     story: {
       en: "When Rama grew into a handsome prince, Sage Vishwamitra took him and his brother Lakshmana to Mithila. There, King Janaka had organized a swayamvar (bride selection ceremony) for his daughter Sita. The challenge was to lift and string the mighty bow of Lord Shiva - a bow so heavy that no king or warrior could even move it! When Rama's turn came, he not only lifted the divine bow but strung it with such force that it broke into two pieces! Everyone was amazed. Sita, who was an incarnation of Goddess Lakshmi, chose Rama as her husband, and they were married in a grand ceremony.",
       hi: "जब राम एक सुंदर राजकुमार बने, तो ऋषि विश्वामित्र उन्हें और उनके भाई लक्ष्मण को मिथिला ले गए। वहां, राजा जनक ने अपनी बेटी सीता के लिए स्वयंवर का आयोजन किया था। चुनौती भगवान शिव के शक्तिशाली धनुष को उठाने और उस पर प्रत्यंचा चढ़ाने की थी - एक ऐसा धनुष जो इतना भारी था कि कोई राजा या योद्धा उसे हिला भी नहीं सकता था! जब राम की बारी आई, तो उन्होंने न केवल दिव्य धनुष को उठाया, बल्कि उसे इतनी जोर से खींचा कि वह दो टुकड़ों में टूट गया! हर कोई चकित रह गया। देवी लक्ष्मी की अवतार सीता ने राम को अपने पति के रूप में चुना और उनका विवाह एक भव्य समारोह में हुआ।",
@@ -113,7 +113,7 @@ export const ramayanStory = [
       hi: "14 वर्ष",
       or: "୧୪ ବର୍ଷ"
     },
-    image: "/The%20Ramayan/forest.png",
+    image: "/ramayan/forest.png",
     story: {
       en: "Just when Rama was about to be crowned king of Ayodhya, Queen Kaikeyi (Dasharatha's third wife) asked the king to fulfill two promises he had made to her long ago. She demanded that her son Bharata become king instead, and that Rama be sent to the forest for 14 years! King Dasharatha was heartbroken, but Rama accepted this without any anger or sadness. He believed in keeping his father's word. Sita insisted on going with him, and his loyal brother Lakshmana also joined them. The three left the palace wearing simple clothes and lived in the forest like sages, facing many adventures and helping people along the way.",
       hi: "जब राम को अयोध्या का राजा बनाया जाने वाला था, तभी रानी कैकेयी ने राजा से दो पुराने वचन पूरे करने को कहा। उसने मांग की कि उसका पुत्र भरत राजा बने और राम को 14 वर्षों के लिए वन भेजा जाए! राजा दशरथ का दिल टूट गया, लेकिन राम ने इसे बिना किसी क्रोध या दुख के स्वीकार कर लिया। सीता ने उनके साथ जाने की जिद की और लक्ष्मण भी उनके साथ हो लिए। तीनों ने सादे कपड़े पहनकर महल छोड़ दिया और ऋषियों की तरह वन में रहने लगे।",
@@ -142,7 +142,7 @@ export const ramayanStory = [
       hi: "पंचवटी वन",
       or: "ପଞ୍ଚବଟୀ ବନ"
     },
-    image: "/The%20Ramayan/golden-deer.png",
+    image: "/ramayan/golden-deer.png",
     story: {
       en: "While living peacefully in the forest, Sita saw a beautiful golden deer with sparkling fur and jewel-like spots. She had never seen anything so magical! She asked Rama to catch it for her. But this was no ordinary deer - it was the demon Maricha in disguise, sent by the evil king Ravana to trick them. When Rama chased the deer far away and shot it with his arrow, it cried out in Rama's voice calling for help! Hearing this, Sita urged Lakshmana to go help Rama. This was all part of Ravana's plan to leave Sita alone so he could kidnap her.",
       hi: "वन में शांति से रहते हुए, सीता ने एक सुंदर सुनहरा हिरण देखा। उन्होंने ऐसा जादुई कुछ कभी नहीं देखा था! उन्होंने राम से इसे पकड़ने के लिए कहा। लेकिन यह कोई साधारण हिरण नहीं था - यह रावण द्वारा भेजा गया राक्षस मारीच था। जब राम ने हिरण का पीछा किया और उसे तीर मारा, तो उसने राम की आवाज में मदद के लिए पुकारा! यह सुनकर सीता ने लक्ष्मण को राम की मदद के लिए भेजा। यह सीता को अकेला छोड़ने की रावण की योजना का हिस्सा था।",
@@ -171,7 +171,7 @@ export const ramayanStory = [
       hi: "लंका",
       or: "ଲଙ୍କା"
     },
-    image: "/The%20Ramayan/ravana.png",
+    image: "/ramayan/ravana.png",
     story: {
       en: "When both Rama and Lakshmana were away, the ten-headed demon king Ravana appeared disguised as a holy man asking for food. When Sita came out to help him, he revealed his true terrifying form and forcefully took her away in his flying chariot! He took her across the ocean to his golden kingdom of Lanka. Sita refused to accept Ravana and stayed brave, waiting for Rama to rescue her. A wise vulture named Jatayu tried to stop Ravana but was badly wounded in the fight. Before dying, Jatayu told Rama what had happened and in which direction Ravana had taken Sita.",
       hi: "जब राम और लक्ष्मण दोनों दूर थे, तो दस सिर वाला राक्षस राजा रावण साधु के वेश में भिक्षा मांगने आया। जब सीता उसकी मदद करने के लिए बाहर आईं, तो उसने अपना असली भयानक रूप दिखाया और उन्हें अपने पुष्पक विमान में जबरन ले गया! वह उन्हें समुद्र के पार अपनी स्वर्ण नगरी लंका ले गया। जटायु नामक गिद्ध ने रावण को रोकने की कोशिश की लेकिन लड़ाई में बुरी तरह घायल हो गया। मरने से पहले, जटायु ने राम को बताया कि क्या हुआ था और रावण सीता को किस दिशा में ले गया है।",
@@ -200,7 +200,7 @@ export const ramayanStory = [
       hi: "ऋष्यमूक पर्वत",
       or: "ଋଷ୍ୟମୁଖ ପର୍ବତ"
     },
-    image: "/The%20Ramayan/hanuman.png",
+    image: "/ramayan/hanuman.png",
     story: {
       en: "While searching for Sita, Rama and Lakshmana met Hanuman, a mighty monkey warrior with incredible strength and devotion. Hanuman was the son of the wind god and could fly through the air! He became Rama's greatest devotee and most loyal friend. Hanuman introduced them to Sugriva, the monkey king, who had his own army of brave monkeys and bears. Rama helped Sugriva defeat his evil brother Vali and regain his kingdom. In return, Sugriva promised to help Rama find Sita and fight Ravana. This friendship between Rama and Hanuman became one of the most beautiful examples of devotion and loyalty.",
       hi: "सीता की खोज करते समय, राम और लक्ष्मण हनुमान से मिले, जो अद्भुत शक्ति और भक्ति वाले वानर योद्धा थे। हनुमान पवन देव के पुत्र थे और हवा में उड़ सकते थे! वह राम के सबसे बड़े भक्त और सबसे वफादार मित्र बन गए। हनुमान ने उन्हें वानर राजा सुग्रीव से मिलवाया। राम ने सुग्रीव को उसके दुष्ट भाई बाली को हराने और अपना राज्य वापस पाने में मदद की। बदले में, सुग्रीव ने सीता को खोजने में मदद करने का वादा किया।",
@@ -229,7 +229,7 @@ export const ramayanStory = [
       hi: "समुद्र पार",
       or: "ସମୁଦ୍ର ପାର"
     },
-    image: "/The%20Ramayan/hanuman-leap.png",
+    image: "/ramayan/hanuman-leap.png",
     story: {
       en: "The monkey army reached the southern shore of India, but Lanka was across a vast ocean! How would they cross? Hanuman, remembering his divine powers, grew to an enormous size and leaped across the entire ocean in one giant jump! He flew over the waves like a bird, covering hundreds of miles. When he reached Lanka at night, he made himself tiny and searched the whole city. Finally, he found Sita sitting sadly in a garden called Ashoka Vatika, praying for Rama. Hanuman gave her Rama's ring as proof and told her that Rama would come soon to rescue her.",
       hi: "वानर सेना भारत के दक्षिणी तट पर पहुँची, लेकिन लंका एक विशाल समुद्र के पार थी! वे कैसे पार करेंगे? हनुमान ने अपनी दिव्य शक्तियों को याद करते हुए, एक विशाल आकार धारण किया और एक ही छलांग में पूरे समुद्र को पार कर लिया! वह पक्षी की तरह लहरों के ऊपर से उड़े। रात में लंका पहुँचकर, उन्होंने खुद को छोटा कर लिया और पूरे शहर की तलाशी ली। अंत में, उन्होंने सीता को अशोक वाटिका में उदास बैठे हुए पाया। हनुमान ने उन्हें प्रमाण के रूप में राम की अंगूठी दी।",
@@ -258,7 +258,7 @@ export const ramayanStory = [
       hi: "स्वर्ण नगरी लंका",
       or: "ସ୍ୱର୍ଣ୍ଣ ଲଙ୍କା"
     },
-    image: "/The%20Ramayan/lanka-burns.png",
+    image: "/ramayan/lanka-burns.png",
     story: {
       en: "When Ravana's soldiers caught Hanuman, they tied cloth around his tail and set it on fire to punish him. But clever Hanuman used this to his advantage! He made his tail grow longer and longer, then jumped from building to building, setting the entire golden city of Lanka on fire! The demons ran in panic as their palaces burned. After showing Ravana his power, Hanuman shrank his tail, put out the fire, and flew back across the ocean to tell Rama that he had found Sita. Rama was overjoyed and proud of his devoted friend.",
       hi: "जब रावण के सैनिकों ने हनुमान को पकड़ा, तो उन्होंने उनकी पूंछ पर कपड़ा बांध दिया और उसे आग लगा दी। लेकिन चतुर हनुमान ने इसका लाभ उठाया! उन्होंने अपनी पूंछ लंबी की और एक इमारत से दूसरी इमारत पर कूदकर पूरी लंका में आग लगा दी! राक्षस घबराकर भागने लगे। रावण को अपनी शक्ति दिखाने के बाद, हनुमान ने आग बुझाई और राम को यह बताने के लिए वापस समुद्र पार कर गए कि उन्होंने सीता को ढूंढ लिया है।",
@@ -287,7 +287,7 @@ export const ramayanStory = [
       hi: "राम सेतु",
       or: "ରାମ ସେତୁ"
     },
-    image: "/The%20Ramayan/ram-setu.png",
+    image: "/ramayan/ram-setu.png",
     story: {
       en: "To reach Lanka, Rama's army needed to cross the ocean. Two brilliant monkey brothers, Nala and Nila, had a solution! They organized the army to build a bridge. Monkeys brought huge rocks. Amazingly, when they wrote 'Rama' on the stones, they floated on water! The whole army worked together day and night, and in just five days, they built a magnificent bridge stretching across the ocean to Lanka. This bridge still exists today and is called Ram Setu.",
       hi: "लंका पहुँचने के लिए, राम की सेना को समुद्र पार करना था। दो बुद्धिमान वानर भाइयों, नल और नील के पास एक समाधान था! उन्होंने पुल बनाने के लिए सेना को संगठित किया। वानरों ने विशाल चट्टानें लाईं। आश्चर्यजनक रूप से, जब उन्होंने पत्थरों पर 'राम' लिखा, तो वे पानी पर तैरने लगे! पूरी सेना ने दिन-रात एक साथ काम किया, और केवल पांच दिनों में, उन्होंने लंका तक समुद्र के पार एक शानदार पुल बना दिया। इसे राम सेतु कहा जाता है।",
@@ -316,7 +316,7 @@ export const ramayanStory = [
       hi: "लंका का युद्धक्षेत्र",
       or: "ଲଙ୍କା ଯୁଦ୍ଧକ୍ଷେତ୍ର"
     },
-    image: "/The%20Ramayan/battle-begins.png",
+    image: "/ramayan/battle-begins.png",
     story: {
       en: "Rama's army reached Lanka. The battle was epic! Brave monkeys fought against giant demons. Lakshmana fought Ravana's son Indrajit, who could become invisible. Hanuman fought Ravana's brother Kumbhakarna, who was as tall as a mountain and slept for six months at a time! The battle raged for many days with warriors showing incredible courage on both sides. The sky was filled with arrows, and the ground shook with the sounds of war.",
       hi: "राम की सेना लंका पहुँची। युद्ध महाकाव्य था! बहादुर वानरों ने विशाल राक्षसों के खिलाफ लड़ाई लड़ी। लक्ष्मण ने रावण के पुत्र इंद्रजीत से युद्ध किया, जो अदृश्य हो सकता था। हनुमान ने रावण के भाई कुंभकर्ण से लड़ाई की, जो पहाड़ जितना ऊँचा था और एक बार में छह महीने सोता था! कई दिनों तक युद्ध चला। आकाश तीरों से भर गया, और युद्ध की आवाज़ों से धरती हिल गई।",
@@ -345,7 +345,7 @@ export const ramayanStory = [
       hi: "लंका युद्धक्षेत्र",
       or: "ଲଙ୍କା ଯୁଦ୍ଧକ୍ଷେତ୍ର"
     },
-    image: "/The%20Ramayan/lakshmana-wounded.png",
+    image: "/ramayan/lakshmana-wounded.png",
     story: {
       en: "Indrajit shot a magical arrow that struck Lakshmana, and he fell unconscious! Rama was devastated. The doctor said only the Sanjeevani herb from the Himalayas could save him. Hanuman flew thousands of miles to Dronagiri mountain. When he couldn't identify the herb, he lifted the entire mountain and flew back with it! The doctors found the herb, and Lakshmana was saved!",
       hi: "इंद्रजीत ने एक जादुई तीर मारा जिससे लक्ष्मण बेहोश हो गए! राम बहुत दुखी हुए। डॉक्टर ने कहा कि केवल हिमालय की संजीवनी बूटी ही उन्हें बचा सकती है। हनुमान हजारों मील दूर द्रोणागिरी पर्वत पर गए। जब वह बूटी की पहचान नहीं कर सके, तो उन्होंने पूरा पहाड़ ही उठा लिया और वापस उड़ गए! डॉक्टरों ने बूटी ढूंढ ली, और लक्ष्मण बच गए!",
@@ -374,7 +374,7 @@ export const ramayanStory = [
       hi: "लंका",
       or: "ଲଙ୍କା"
     },
-    image: "/The%20Ramayan/final-battle.png",
+    image: "/ramayan/final-battle.png",
     story: {
       en: "Finally, Rama and Ravana faced each other. Ravana had ten heads and twenty arms! Every time Rama cut off one head, another grew back. The gods told Rama the secret - Ravana's life force was in his navel. Rama took a divine arrow, chanted a prayer, and shot it straight at Ravana's navel. The mighty demon king finally fell. Good had triumphed over evil!",
       hi: "अंत में, राम और रावण का आमना-सामना हुआ। रावण के दस सिर और बीस भुजाएँ थीं! हर बार जब राम एक सिर काटते, तो दूसरा उग आता। देवताओं ने राम को रहस्य बताया - रावण के प्राण उसकी नाभि में थे। राम ने एक दिव्य बाण लिया, प्रार्थना की और उसे सीधा रावण की नाभि पर मारा। शक्तिशाली राक्षस राजा अंततः गिर गया। बुराई पर अच्छाई की जीत हुई!",
@@ -408,7 +408,7 @@ export const ramayanStory = [
       hi: "14 साल बाद",
       or: "୧୪ ବର୍ଷ ପରେ"
     },
-    image: "/The%20Ramayan/return-ayodhya.png",
+    image: "/ramayan/return-ayodhya.png",
     story: {
       en: "With Ravana defeated, Sita was free. Rama, Sita, and Lakshmana flew back to Ayodhya in the Pushpaka Vimana. The people lit thousands of oil lamps (diyas) to welcome Rama home, making the whole kingdom glow like stars! This celebration is why we celebrate Diwali, the festival of lights. Rama was crowned king.",
       hi: "रावण के हारने के बाद, सीता मुक्त हो गईं। राम, सीता और लक्ष्मण पुष्पक विमान में अयोध्या वापस उड़े। लोगों ने राम के स्वागत के लिए हजारों दीये जलाए, जिससे पूरा राज्य तारों की तरह चमक उठा! यही कारण है कि हम दीपावली मनाते हैं। राम को राजा बनाया गया।",
@@ -437,7 +437,7 @@ export const ramayanStory = [
       hi: "अयोध्या",
       or: "ଅଯୋଧ୍ୟା"
     },
-    image: "/The%20Ramayan/rama-rajya.png",
+    image: "/ramayan/rama-rajya.png",
     story: {
       en: "Under King Rama's rule, Ayodhya entered a golden age called 'Ram Rajya'. There was no crime, poverty, or suffering. Rama reigned with perfect justice and served his people like a father.",
       hi: "राजा राम के शासन में, अयोध्या ने 'राम राज्य' नामक स्वर्ण युग में प्रवेश किया। कोई अपराध, गरीबी या दुख नहीं था। राम ने पूर्ण न्याय के साथ शासन किया और एक पिता की तरह अपनी प्रजा की सेवा की।",
@@ -466,7 +466,7 @@ export const ramayanStory = [
       hi: "हर युग के लिए",
       or: "ସବୁ ଯୁଗ ପାଇଁ"
     },
-    image: "/The%20Ramayan/lessons.png",
+    image: "/ramayan/lessons.png",
     story: {
       en: "The Ramayan teaches us duty from Rama, courage from Sita, loyalty from Lakshmana, and devotion from Hanuman. It reminds us that good always wins over evil and righteousness is the highest path.",
       hi: "रामायण हमें राम से कर्तव्य, सीता से साहस, लक्ष्मण से वफादारी और हनुमान से भक्ति सिखाती है। यह हमें याद दिलाता है कि अच्छाई हमेशा बुराई पर जीतती है और धर्म ही सर्वोच्च मार्ग है।",
@@ -479,3 +479,4 @@ export const ramayanStory = [
     }
   }
 ];
+

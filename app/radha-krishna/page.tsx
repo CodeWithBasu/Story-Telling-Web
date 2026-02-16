@@ -28,7 +28,7 @@ export default function RadhaKrishnaPage() {
 
   return (
     <div className="min-h-screen bg-black font-sans selection:bg-pink-500/30">
-      <BackgroundMusic src="/RadhaKrishna/bgm.mp3" initialVolume={0.05} />
+      <BackgroundMusic src="/radha-krishna/bgm.mp3" initialVolume={0.05} />
       {/* Background Ambience */}
       {/* Background Ambience - Peacock Theme */}
       <div className="fixed inset-0 -z-20 bg-[radial-gradient(circle_at_top,_#0f172a_0%,_#0c4a6e_25%,_#0f766e_50%,_#020617_100%)] overflow-hidden" />
@@ -40,7 +40,7 @@ export default function RadhaKrishnaPage() {
       </div>
 
       {/* Texture Layer (User can upload peacock-bg.png) */}
-      <div className="fixed inset-0 z-0 bg-[url('/RadhaKrishna/peacock-bg.png')] bg-cover bg-center opacity-15 mix-blend-color-dodge pointer-events-none" />
+      <div className="fixed inset-0 z-0 bg-[url('/radha-krishna/peacock-bg.png')] bg-cover bg-center opacity-15 mix-blend-color-dodge pointer-events-none" />
       
       {/* Stardust/Sparkles */}
       <div className="fixed inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 pointer-events-none mix-blend-screen animate-pulse" />
@@ -196,3 +196,4 @@ export default function RadhaKrishnaPage() {
     </div>
   )
 }
+

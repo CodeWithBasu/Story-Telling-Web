@@ -27,7 +27,7 @@ export default function RamayanPage() {
 
   return (
     <div className="min-h-screen bg-black font-sans selection:bg-orange-500/30">
-      <BackgroundMusic src="/The%20Ramayan/bgm.mp3" initialVolume={0.05} />
+      <BackgroundMusic src="/ramayan/bgm.mp3" initialVolume={0.05} />
       {/* Background Ambience */}
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-orange-900/20 via-black to-black z-0 pointer-events-none" />
       <div className="fixed inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 pointer-events-none mix-blend-screen" />
@@ -183,3 +183,4 @@ export default function RamayanPage() {
     </div>
   )
 }
+

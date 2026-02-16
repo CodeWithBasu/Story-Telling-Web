@@ -23,7 +23,7 @@ export default function Home() {
       >
         {/* Background Image */}
         <div 
-          className="absolute inset-0 bg-[url('/The%20Ramayan/hanuman-leap.png')] bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-110"
+          className="absolute inset-0 bg-[url('/ramayan/hanuman-leap.png')] bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-110"
         />
         
         {/* Overlay Gradient */}
@@ -79,7 +79,7 @@ export default function Home() {
       >
         {/* Background Image */}
         <div 
-          className="absolute inset-0 bg-[url('/RadhaKrishna/eternal-bond.png')] bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-110"
+          className="absolute inset-0 bg-[url('/radha-krishna/eternal-bond.png')] bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-110"
         />
         
         {/* Overlay Gradient */}
