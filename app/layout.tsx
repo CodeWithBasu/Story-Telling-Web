@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Press_Start_2P, Cinzel, Great_Vibes, Rozha_One, Laila, Crimson_Pro } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
+
 import { Suspense } from "react"
 import "./globals.css"
 
@@ -70,7 +70,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${pressStart2P.variable} ${cinzel.variable} ${greatVibes.variable} ${rozhaOne.variable} ${laila.variable} ${crimsonPro.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
-        <Analytics />
+        <div style={{ textAlign: "center", color: "#666", fontFamily: "monospace", padding: "20px", background: "#f4f4f4" }}>
+          &lt; coded /&gt; with ❤️ and ☕ by BASUDEV © 2026
+        </div>
       </body>
     </html>
   )
