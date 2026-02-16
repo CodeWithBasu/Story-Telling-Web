@@ -39,8 +39,7 @@ export default function RadhaKrishnaPage() {
         <div className="absolute bottom-[-20%] right-[-10%] w-[60vw] h-[60vw] bg-[radial-gradient(circle,_#d946ef_0%,_#7e22ce_30%,_transparent_70%)] opacity-10 blur-[100px]" />
       </div>
 
-      {/* Texture Layer (User can upload peacock-bg.png) */}
-      <div className="fixed inset-0 z-0 bg-[url('/radha-krishna/peacock-bg.png')] bg-cover bg-center opacity-15 mix-blend-color-dodge pointer-events-none" />
+
       
       {/* Stardust/Sparkles */}
       <div className="fixed inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 pointer-events-none mix-blend-screen animate-pulse" />
