@@ -22,6 +22,7 @@
 - 🌐 **Multi-Language Support**: Seamlessly switch between **English**, **Hindi** (हिंदी), and **Odia** (ଓଡ଼ିଆ).
 - 📱 **Responsive Design**: A fluid experience optimized for all devices, from mobile to desktop.
 - 💎 **Modern UI**: Featuring glassmorphism, smooth animations, and tailored typography.
+- 📲 **PWA Ready**: Installable as a native app on your desktop and mobile devices for a seamless experience.
 
 ---
 

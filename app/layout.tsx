@@ -54,6 +54,11 @@ export const metadata: Metadata = {
   title: "A StoryTelling Web",
   description: "An interactive storytelling experience",
   generator: "Next.js",
+  manifest: "/manifest.json",
+  icons: {
+    icon: "/fevicon.ico",
+    apple: "/fevicon.ico",
+  },
 }
 
 export default function RootLayout({
