@@ -1,10 +1,11 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
-import { Sword, Shield, Crown, Flame } from "lucide-react"
+import { useState, useEffect } from "react"
+import { Sword, Shield, Crown, Flame, BookOpen } from "lucide-react"
 
 interface NarasimhaCardProps {
+  id: string
   title: string | { en: string; hi: string; or: string }
   meet?: string | { en: string; hi: string; or: string }
   place: string | { en: string; hi: string; or: string }
@@ -17,6 +18,7 @@ interface NarasimhaCardProps {
 }
 
 export const NarasimhaCard: React.FC<NarasimhaCardProps> = ({
+  id,
   title,
   meet,
   place,
@@ -29,6 +31,9 @@ export const NarasimhaCard: React.FC<NarasimhaCardProps> = ({
 }) => {
   const [imgSrc, setImgSrc] = useState(image)
   const [hasError, setHasError] = useState(false)
+  const [showDetailed, setShowDetailed] = useState(false)
+  const [detailedData, setDetailedData] = useState<any>(null)
+  const [isLoading, setIsLoading] = useState(false)
 
   // Helper to get text based on language
   const getText = (content: string | { en: string; hi: string; or: string } | undefined) => {
@@ -46,9 +51,31 @@ export const NarasimhaCard: React.FC<NarasimhaCardProps> = ({
 
   // Labels based on language
   const labels = {
-    en: { meet: "Character", place: "Location", fact: "Divine Fact" },
-    hi: { meet: "पात्र", place: "स्थान", fact: "दिव्य तथ्य" },
-    or: { meet: "ପାତ୍ର", place: "ସ୍ଥାନ", fact: "ଦିବ୍ୟ ତଥ୍ୟ" }
+    en: { meet: "Character", place: "Location", fact: "Divine Fact", readMore: "Read Divine Details", loading: "Fetching Puranas...", close: "Close" },
+    hi: { meet: "पात्र", place: "स्थान", fact: "दिव्य तथ्य", readMore: "विस्तृत विवरण पढ़ें", loading: "खोज रहे हैं...", close: "बंद करें" },
+    or: { meet: "ପାତ୍ର", place: "ସ୍ଥାନ", fact: "ଦିବ୍ୟ ତଥ୍ୟ", readMore: "ବିସ୍ତୃତ ବିବରଣୀ ପଢନ୍ତୁ", loading: "ଖୋଜୁଛି...", close: "ବନ୍ଦ କରନ୍ତୁ" }
+  }
+
+  const fetchDetailedContent = async () => {
+    if (detailedData) {
+      setShowDetailed(true)
+      return
+    }
+
+    setIsLoading(true)
+    try {
+      const response = await fetch(`/api/narasimha-story-detail?storyId=${id}`);
+      if (!response.ok) {
+        throw new Error('Fetch failed');
+      }
+      const data = await response.json();
+      setDetailedData(data);
+      setShowDetailed(true);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   // Function to generate placeholder SVG (Golden/Fiery theme)
@@ -167,7 +194,91 @@ export const NarasimhaCard: React.FC<NarasimhaCardProps> = ({
             </div>
           </div>
         )}
+
+        {/* Action Button */}
+        <div className="flex justify-start mt-6">
+          <button
+            onClick={fetchDetailedContent}
+            disabled={isLoading}
+            className="group/btn relative px-6 py-3 rounded-full bg-gradient-to-r from-amber-600 to-orange-700 text-white font-bold text-sm uppercase tracking-widest shadow-lg hover:shadow-orange-500/40 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-wait overflow-hidden"
+          >
+            <span className="relative z-10 flex items-center gap-2">
+              {isLoading ? (
+                <>
+                  <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  {labels[language].loading}
+                </>
+              ) : (
+                <>
+                  <BookOpen className="w-4 h-4" />
+                  {labels[language].readMore}
+                </>
+              )}
+            </span>
+            <div className="absolute inset-0 bg-white/20 transform translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300" />
+          </button>
+        </div>
       </div>
+
+      {/* Detailed Modal */}
+      {showDetailed && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fadeIn">
+          <div className="bg-neutral-900 border border-orange-500/30 rounded-3xl w-full max-w-4xl max-h-[80vh] overflow-hidden flex flex-col shadow-2xl">
+            {/* Modal Header */}
+            <div className="p-6 border-b border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-4 bg-gradient-to-r from-orange-950/40 to-black">
+              <div className="space-y-1">
+                {detailedData?.kandaName && (
+                  <div className="text-[10px] font-bold text-orange-500 uppercase tracking-[0.2em]">
+                    {detailedData.kandaName}
+                  </div>
+                )}
+                <h2 className="text-2xl md:text-3xl font-cinzel text-orange-200">
+                  {detailedData?.title || currentTitle}
+                </h2>
+              </div>
+              <button
+                onClick={() => setShowDetailed(false)}
+                className="p-2 hover:bg-white/10 rounded-full text-gray-400 hover:text-white transition-colors"
+              >
+                <span className="text-xs uppercase font-bold tracking-widest">{labels[language].close}</span>
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-8 overflow-y-auto space-y-8 font-crimson">
+              {detailedData?.description && (
+                <div className="text-orange-100/80 text-lg md:text-xl leading-relaxed italic text-center p-6 bg-orange-500/5 rounded-2xl border border-orange-500/10">
+                  {detailedData.description}
+                </div>
+              )}
+
+              {detailedData?.shlokas?.length > 0 ? (
+                <div className="space-y-12">
+                  {detailedData.shlokas.map((s: any, i: number) => (
+                    <div key={i} className="space-y-4 text-center">
+                      <div className="text-amber-500 text-2xl md:text-3xl leading-relaxed font-semibold">
+                        {s.shloka}
+                      </div>
+                      <div className="text-orange-200/60 text-base md:text-lg italic max-w-2xl mx-auto border-t border-orange-500/20 pt-4">
+                        {s.translation || s.meaning}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-gray-500 text-center py-12">
+                  No detailed verses found for this chapter yet.
+                </div>
+              )}
+            </div>
+
+            {/* Modal Footer */}
+            <div className="p-4 bg-black/40 border-t border-white/5 text-center text-[10px] text-gray-500 uppercase tracking-widest">
+              Source: {detailedData?.source || 'Traditional Scriptures'}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

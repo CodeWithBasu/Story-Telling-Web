@@ -158,6 +158,7 @@ export default function RamayanPage() {
         {ramayanStory.map((chapter, index) => (
           <RamayanCard
             key={chapter.id}
+            id={chapter.id}
             title={chapter.title}
             meet={chapter.meet}
             place={chapter.place}

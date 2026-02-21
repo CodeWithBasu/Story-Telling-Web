@@ -158,6 +158,7 @@ export default function MahabharatPage() {
         {mahabharatStory.map((chapter, index) => (
           <MahabharatCard
             key={chapter.id}
+            id={chapter.id}
             title={chapter.title}
             meet={chapter.meet}
             place={chapter.place}

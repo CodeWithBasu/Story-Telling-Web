@@ -30,7 +30,7 @@ export default function NarasimhaPage() {
 
   return (
     <div className="min-h-screen bg-black font-sans selection:bg-amber-500/30">
-      <BackgroundMusic src="/narasimha/bgm.mp3" initialVolume={0.05} />
+      <BackgroundMusic src="/narasimha/bgm.mp3" initialVolume={0.4} />
       {/* Background Ambience */}
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-950/30 via-black to-black z-0 pointer-events-none" />
       <div 
@@ -158,6 +158,7 @@ export default function NarasimhaPage() {
         {narasimhaStory.map((chapter, index) => (
           <NarasimhaCard
             key={chapter.id}
+            id={chapter.id}
             title={chapter.title}
             meet={chapter.meet}
             place={chapter.place}
