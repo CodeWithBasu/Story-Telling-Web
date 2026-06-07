@@ -61,6 +61,8 @@ export const metadata: Metadata = {
   },
 }
 
+import MythologyAgent from "@/components/MythologyAgent"
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -70,7 +72,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${pressStart2P.variable} ${cinzel.variable} ${greatVibes.variable} ${rozhaOne.variable} ${laila.variable} ${crimsonPro.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
-        <div style={{ textAlign: "center", color: "#666", fontFamily: "monospace", padding: "20px", background: "#f4f4f4" }}>
+        <MythologyAgent />
+        <div style={{ textAlign: "center", color: "#666", fontFamily: "monospace", padding: "20px", background: "black" }}>
           &lt; coded /&gt; with ❤️ and ☕ by BASUDEV © 2026
         </div>
       </body>
