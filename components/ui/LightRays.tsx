@@ -10,7 +10,8 @@ export type RaysOrigin =
   | 'left'
   | 'bottom-center'
   | 'bottom-right'
-  | 'bottom-left';
+  | 'bottom-left'
+  | 'center';
 
 interface LightRaysProps {
   raysOrigin?: RaysOrigin;
@@ -56,6 +57,8 @@ const getAnchorAndDir = (
       return { anchor: [0.5 * w, (1 + outside) * h], dir: [0, -1] };
     case 'bottom-right':
       return { anchor: [w, (1 + outside) * h], dir: [0, -1] };
+    case 'center':
+      return { anchor: [0.5 * w, 0.5 * h], dir: [0, -1] };
     default: // "top-center"
       return { anchor: [0.5 * w, -outside * h], dir: [0, 1] };
   }
@@ -85,11 +88,11 @@ const LightRays: React.FC<LightRaysProps> = ({
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const uniformsRef = useRef<Uniforms | null>(null);
-  const rendererRef = useRef<Renderer | null>(null);
+  const rendererRef = useRef<any>(null);
   const mouseRef = useRef({ x: 0.5, y: 0.5 });
   const smoothMouseRef = useRef({ x: 0.5, y: 0.5 });
   const animationIdRef = useRef<number | null>(null);
-  const meshRef = useRef<Mesh | null>(null);
+  const meshRef = useRef<any>(null);
   const cleanupFunctionRef = useRef<(() => void) | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
