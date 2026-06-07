@@ -6,7 +6,7 @@ Use these professional, emoji-rich details to make your repository stand out! �
 
 ### **Short Description**
 
-> 🕉️ **Divine Epics Interactive** | Experience the Ramayan 🏹 & Radha Krishna 🦚 with immersive audio 🎧 & stunning visuals 💎. Built with Next.js 14 ⚡
+> 🕉️ **Divine Epics Interactive** | Experience the Ramayan 🏹, Mahabharat ⚔️, Narasimha 🦁, & Radha Krishna 🦚 with immersive audio 🎧 & stunning visuals 💎. Built with Next.js 14 ⚡
 
 ### **Topics**
 
@@ -19,8 +19,10 @@ Use these professional, emoji-rich details to make your repository stand out! �
 An immersive digital journey into the heart of India's spiritual heritage. Choose your path:
 
 - **The Ramayan**: A tale of righteousness & courage 🏹
+- **The Mahabharat**: The great war of Dharma ⚔️
+- **Mahavatar Narasimha**: The divine protector 🦁
 - **Radha Krishna**: A saga of divine love & devotion 🦚
 
 ## 🖼️ Social Preview
 
-Upload `public/RadhaKrishna/eternal-bond.png` for a beautiful cover image! 🖼️
+Upload `public/mahavarat/kurukshetra-poster.png` or `public/radha-krishna/eternal-bond.png` for a beautiful cover image! 🖼️
