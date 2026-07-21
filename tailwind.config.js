@@ -88,6 +88,11 @@ module.exports = {
             "background-size": "200% 200%",
             "background-position": "right center"
           }
+        },
+        "ken-burns": {
+          "0%": { transform: "scale(1) translate(0, 0)" },
+          "50%": { transform: "scale(1.05) translate(-1%, -1%)" },
+          "100%": { transform: "scale(1.1) translate(0, 0)" },
         }
       },
       animation: {
@@ -95,6 +100,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         fadeIn: "fadeIn 0.8s ease-out forwards",
         "gradient-x": "gradient-x 15s ease infinite",
+        "ken-burns": "ken-burns 30s ease-in-out infinite alternate",
       },
       fontFamily: {
         sans: ["var(--font-sans)"],
